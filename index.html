@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steril Medical Services - Professional medical equipment cleaning for hospitals.">
+    <title>Steril Medical Services</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #187842ce;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            text-align: center; 
+        }
+        .header-left {
+            flex: 1 1 auto;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-left: 0;
+                margin-top: 10px;
+            
+            }
+        }
+        nav {
+            background-color: #187842ea;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #187842ce;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "✔"; 
+            position: absolute;
+            left: 0;
+            color: #18964ece;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form input, form textarea {
+            padding: 10px 2px 10px 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        form button {
+            background-color: #187842ce;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            /* background-color: rgb(0, 77, 160); */
+            background-color: #1d9250ce;
+        }
+        textarea {
+            resize: none;
+        }
+
+        form input::placeholder,
+        form textarea::placeholder {
+            padding-left: 5px;
+        }
+
+        form input:focus::placeholder,
+        form textarea:focus::placeholder {
+            color: transparent;
+        }
+        .h2-header{
+            color: white;
+            margin-top: 1px;
+            margin-left: 180px;
+        }
+        header h1 {
+            margin-bottom: 0;
+            font-size: 3rem;
+            margin-left: 180px;
+        }
+        .p-header{
+            margin-left: 180px;
+        }
+
+        @media (max-width: 600px) {
+            header h1,
+            .h2-header,
+            .p-header {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>STERIL</h1>
+            <h2 class="h2-header">Medical Services </h2>
+            <p class="p-header">Professional Medical Equipment Cleaning for Hospitals</p>
+        </div>
+        <img class="logo" src="logo.png" alt="Steril Medical Services Logo">
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Steril Medical Services specializes in the cleaning and sterilization of medical equipment for hospitals and healthcare facilities. We ensure that all equipment is cleaned to the highest standards, promoting safety and hygiene for patients and staff.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Sterilization of surgical instruments</li>
+            <li>Cleaning of hospital equipment</li>
+            <li>Medical device disinfection</li>
+            <li>Equipment maintenance support</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: info@STERILmedicalservices.com</p>
+            <p>Phone: +31 123-123-1234</p>
+            <p>Address: 123 Health St, Medical City</p>
+        </div>
+
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Steril Medical Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
